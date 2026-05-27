@@ -1,0 +1,12 @@
+serverAddr = "你的VPS公网IP"
+serverPort = 7000
+auth.method = "token"
+auth.token = "your_strong_token_here"
+transport.tls.enable = true
+
+[[proxies]]
+name = "postgres"
+type = "tcp"
+localIP = "192.168.5.104"
+localPort = 5432
+remotePort = 5432
