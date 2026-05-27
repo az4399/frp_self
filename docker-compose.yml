@@ -1,0 +1,8 @@
+services:
+  frpc:
+    image: ghcr.io/az4399/frpc-self:latest
+    container_name: frpc
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./frpc.toml:/etc/frp/frpc.toml:ro
